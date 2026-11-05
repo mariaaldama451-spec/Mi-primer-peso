@@ -2,8 +2,8 @@
 
 Página web de educación financiera para personas en México que no saben nada de inversión, desde jóvenes hasta adultos. Funciona como una ruta de aprendizaje en 3 etapas, con lenguaje sencillo y ejemplos de la vida diaria.
 
-*Sitio publicado:* [PEGA AQUÍ EL LINK DE BOLT]
-*Repositorio:* [PEGA AQUÍ EL LINK DE GITHUB]
+*Sitio publicado:* https://mi-primer-peso-web-zneb.bolt.host/
+*Repositorio:* https://github.com/mariaaldama451-spec/Mi-primer-peso/edit/main/README.md
 
 ## Qué incluye
 - *Etapa 1:* 6 lecciones cortas (inflación, ahorrar vs. invertir, riesgo y rendimiento, interés compuesto, antes de invertir y dónde invertir en México). Cada lección tiene una pregunta con estado propio y el botón "Siguiente" se activa solo al contestar.

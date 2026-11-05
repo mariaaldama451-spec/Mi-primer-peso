@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-brand-ground text-brand-ink font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-blue ring-offset-2 ring-offset-brand-ground;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 min-h-[52px] px-6 py-3 rounded-[2px]
+      border border-brand-yellowDeep bg-brand-yellow text-brand-ink font-sans font-semibold
+      text-base uppercase tracking-[0.12em] transition-colors duration-200 ease-out
+      hover:bg-brand-yellowDeep active:bg-brand-yellowDeep select-none;
+  }
+
+  .btn:disabled {
+    @apply cursor-not-allowed border-brand-disabledBorder bg-brand-disabled text-brand-muted
+      hover:bg-brand-disabled active:bg-brand-disabled;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 min-h-[52px] px-6 py-3 rounded-[2px]
+      border border-brand-ink bg-transparent text-brand-ink font-sans font-semibold
+      text-base uppercase tracking-[0.12em] transition-colors duration-200 ease-out
+      hover:bg-brand-yellow hover:border-brand-yellowDeep active:bg-brand-yellowDeep select-none;
+  }
+
+  .panel {
+    @apply relative bg-brand-paper border border-brand-yellow rounded-[2px];
+  }
+}
+
+.screen-enter {
+  animation: screen-enter 350ms ease-out;
+}
+
+@keyframes screen-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
